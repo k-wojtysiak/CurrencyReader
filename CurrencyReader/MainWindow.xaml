@@ -1,0 +1,44 @@
+﻿<Window x:Class="CurrencyReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CurrencyReader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800"
+        ResizeMode="NoResize"
+        Background="CornflowerBlue"
+        FontFamily="Sans">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0" 
+                   Height="60" Width="Auto" FontSize="42" TextAlignment="Center">
+            Insert numerical value:
+        </TextBlock>
+        
+        <TextBox Name="InputBox" 
+                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="217,140,189.6,0" 
+                 Height="40" Width="387" FontSize="30" TextAlignment="Right">
+            0,00
+        </TextBox>
+        
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="190,138,581.6,0" 
+                   Height="42" FontSize="42">
+            $
+        </TextBlock>
+        
+        <Button Click="Button_Click" 
+                HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,200,0,0" 
+                Height="40" Width="120" FontSize="28" 
+                Background="RoyalBlue" BorderBrush="#4060D0">
+            Convert!
+        </Button>
+        
+        <TextBox Name="OutputBox" 
+                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,260,0,0" 
+                 Height="150" Width="660" FontSize="20" TextAlignment="Left" TextWrapping="Wrap">
+
+        </TextBox>
+        
+    </Grid>
+</Window>
